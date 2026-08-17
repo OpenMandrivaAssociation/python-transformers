@@ -1,0 +1,25 @@
+Allow tokenizers 0.23.1. Transformers 5.15.0 pins tokenizers<=0.23.0
+but 0.23.0 was never released on PyPI; 0.23.1 is the only 0.23.x.
+
+--- transformers-5.15.0/setup.py
++++ transformers-5.15.0/setup.py
+@@ -146,7 +146,7 @@
+     "tomli",
+     "tiktoken",
+     "timm>=1.0.23",
+-    "tokenizers>=0.22.0,<=0.23.0",
++    "tokenizers>=0.22.0,<=0.23.1",
+     "torch>=2.5",
+     "torchaudio",
+     "torchvision",
+--- transformers-5.15.0/src/transformers/dependency_versions_table.py
++++ transformers-5.15.0/src/transformers/dependency_versions_table.py
+@@ -73,7 +73,7 @@
+     "tomli": "tomli",
+     "tiktoken": "tiktoken",
+     "timm": "timm>=1.0.23",
+-    "tokenizers": "tokenizers>=0.22.0,<=0.23.0",
++    "tokenizers": "tokenizers>=0.22.0,<=0.23.1",
+     "torch": "torch>=2.5",
+     "torchaudio": "torchaudio",
+     "torchvision": "torchvision",
