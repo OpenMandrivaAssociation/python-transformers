@@ -1,6 +1,6 @@
-diff -Nru transformers-5.15.0/src/transformers/models/apertus1p5/__init__.py transformers-5.15.0.new/src/transformers/models/apertus1p5/__init__.py
---- transformers-5.15.0/src/transformers/models/apertus1p5/__init__.py	1970-01-01 01:00:00.000000000 +0100
-+++ transformers-5.15.0.new/src/transformers/models/apertus1p5/__init__.py	2026-08-21 05:33:10.834619044 +0200
+diff -Nru transformers-5.19.0/src/transformers/models/apertus1p5/__init__.py transformers-5.19.0/src/transformers/models/apertus1p5/__init__.py
+--- transformers-5.19.0/src/transformers/models/apertus1p5/__init__.py	1970-01-01 01:00:00.000000000 +0100
++++ transformers-5.19.0/src/transformers/models/apertus1p5/__init__.py	2026-10-07 20:15:57.089281959 +0200
 @@ -0,0 +1,30 @@
 +# Copyright 2026 the HuggingFace Team. All rights reserved.
 +#
@@ -32,9 +32,9 @@ diff -Nru transformers-5.15.0/src/transformers/models/apertus1p5/__init__.py tra
 +
 +    _file = globals()["__file__"]
 +    sys.modules[__name__] = _LazyModule(__name__, _file, define_import_structure(_file), module_spec=__spec__)
-diff -Nru transformers-5.15.0/src/transformers/models/apertus1p5/configuration_apertus1p5.py transformers-5.15.0.new/src/transformers/models/apertus1p5/configuration_apertus1p5.py
---- transformers-5.15.0/src/transformers/models/apertus1p5/configuration_apertus1p5.py	1970-01-01 01:00:00.000000000 +0100
-+++ transformers-5.15.0.new/src/transformers/models/apertus1p5/configuration_apertus1p5.py	2026-08-21 05:33:10.834651225 +0200
+diff -Nru transformers-5.19.0/src/transformers/models/apertus1p5/configuration_apertus1p5.py transformers-5.19.0/src/transformers/models/apertus1p5/configuration_apertus1p5.py
+--- transformers-5.19.0/src/transformers/models/apertus1p5/configuration_apertus1p5.py	1970-01-01 01:00:00.000000000 +0100
++++ transformers-5.19.0/src/transformers/models/apertus1p5/configuration_apertus1p5.py	2026-10-07 20:15:57.089325069 +0200
 @@ -0,0 +1,291 @@
 +#                🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
 +#           This file was automatically generated from src/transformers/models/apertus1p5/modular_apertus1p5.py.
@@ -327,9 +327,9 @@ diff -Nru transformers-5.15.0/src/transformers/models/apertus1p5/configuration_a
 +
 +
 +__all__ = ["Apertus1p5Config", "Apertus1p5TextConfig", "Apertus1p5VisionTokenizerConfig"]
-diff -Nru transformers-5.15.0/src/transformers/models/apertus1p5/image_processing_apertus1p5.py transformers-5.15.0.new/src/transformers/models/apertus1p5/image_processing_apertus1p5.py
---- transformers-5.15.0/src/transformers/models/apertus1p5/image_processing_apertus1p5.py	1970-01-01 01:00:00.000000000 +0100
-+++ transformers-5.15.0.new/src/transformers/models/apertus1p5/image_processing_apertus1p5.py	2026-08-21 05:33:10.834806216 +0200
+diff -Nru transformers-5.19.0/src/transformers/models/apertus1p5/image_processing_apertus1p5.py transformers-5.19.0/src/transformers/models/apertus1p5/image_processing_apertus1p5.py
+--- transformers-5.19.0/src/transformers/models/apertus1p5/image_processing_apertus1p5.py	1970-01-01 01:00:00.000000000 +0100
++++ transformers-5.19.0/src/transformers/models/apertus1p5/image_processing_apertus1p5.py	2026-10-07 20:15:57.089434801 +0200
 @@ -0,0 +1,182 @@
 +# Copyright 2026 The SwissAI Initiative and The HuggingFace Inc. team. All rights reserved.
 +#
@@ -513,9 +513,9 @@ diff -Nru transformers-5.15.0/src/transformers/models/apertus1p5/image_processin
 +
 +
 +__all__ = ["Apertus1p5ImageProcessor"]
-diff -Nru transformers-5.15.0/src/transformers/models/apertus1p5/modeling_apertus1p5.py transformers-5.15.0.new/src/transformers/models/apertus1p5/modeling_apertus1p5.py
---- transformers-5.15.0/src/transformers/models/apertus1p5/modeling_apertus1p5.py	1970-01-01 01:00:00.000000000 +0100
-+++ transformers-5.15.0.new/src/transformers/models/apertus1p5/modeling_apertus1p5.py	2026-08-21 05:33:10.834680255 +0200
+diff -Nru transformers-5.19.0/src/transformers/models/apertus1p5/modeling_apertus1p5.py transformers-5.19.0/src/transformers/models/apertus1p5/modeling_apertus1p5.py
+--- transformers-5.19.0/src/transformers/models/apertus1p5/modeling_apertus1p5.py	1970-01-01 01:00:00.000000000 +0100
++++ transformers-5.19.0/src/transformers/models/apertus1p5/modeling_apertus1p5.py	2026-10-07 20:15:57.089507402 +0200
 @@ -0,0 +1,1411 @@
 +#                🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
 +#           This file was automatically generated from src/transformers/models/apertus1p5/modular_apertus1p5.py.
@@ -1928,9 +1928,9 @@ diff -Nru transformers-5.15.0/src/transformers/models/apertus1p5/modeling_apertu
 +    "Apertus1p5VisionTokenizerModel",
 +    "Apertus1p5Model",
 +]
-diff -Nru transformers-5.15.0/src/transformers/models/apertus1p5/modular_apertus1p5.py transformers-5.15.0.new/src/transformers/models/apertus1p5/modular_apertus1p5.py
---- transformers-5.15.0/src/transformers/models/apertus1p5/modular_apertus1p5.py	1970-01-01 01:00:00.000000000 +0100
-+++ transformers-5.15.0.new/src/transformers/models/apertus1p5/modular_apertus1p5.py	2026-08-21 05:33:10.834731116 +0200
+diff -Nru transformers-5.19.0/src/transformers/models/apertus1p5/modular_apertus1p5.py transformers-5.19.0/src/transformers/models/apertus1p5/modular_apertus1p5.py
+--- transformers-5.19.0/src/transformers/models/apertus1p5/modular_apertus1p5.py	1970-01-01 01:00:00.000000000 +0100
++++ transformers-5.19.0/src/transformers/models/apertus1p5/modular_apertus1p5.py	2026-10-07 20:15:57.089830537 +0200
 @@ -0,0 +1,1246 @@
 +# Copyright 2026 The SwissAI Initiative, The Emu team, BAAI, and The HuggingFace Inc. team. All rights reserved.
 +#
@@ -3178,9 +3178,9 @@ diff -Nru transformers-5.15.0/src/transformers/models/apertus1p5/modular_apertus
 +    "Apertus1p5VisionTokenizerModel",
 +    "Apertus1p5Model",
 +]
-diff -Nru transformers-5.15.0/src/transformers/models/apertus1p5/processing_apertus1p5.py transformers-5.15.0.new/src/transformers/models/apertus1p5/processing_apertus1p5.py
---- transformers-5.15.0/src/transformers/models/apertus1p5/processing_apertus1p5.py	1970-01-01 01:00:00.000000000 +0100
-+++ transformers-5.15.0.new/src/transformers/models/apertus1p5/processing_apertus1p5.py	2026-08-21 05:33:10.834779476 +0200
+diff -Nru transformers-5.19.0/src/transformers/models/apertus1p5/processing_apertus1p5.py transformers-5.19.0/src/transformers/models/apertus1p5/processing_apertus1p5.py
+--- transformers-5.19.0/src/transformers/models/apertus1p5/processing_apertus1p5.py	1970-01-01 01:00:00.000000000 +0100
++++ transformers-5.19.0/src/transformers/models/apertus1p5/processing_apertus1p5.py	2026-10-07 20:15:57.090116811 +0200
 @@ -0,0 +1,260 @@
 +# Copyright 2026 The SwissAI Initiative and The HuggingFace Inc. team. All rights reserved.
 +#
@@ -3442,9 +3442,9 @@ diff -Nru transformers-5.15.0/src/transformers/models/apertus1p5/processing_aper
 +
 +
 +__all__ = ["Apertus1p5Processor"]
-diff -Nru transformers-5.15.0/src/transformers/models/auto/auto_mappings.py transformers-5.15.0.new/src/transformers/models/auto/auto_mappings.py
---- transformers-5.15.0/src/transformers/models/auto/auto_mappings.py	2026-08-10 12:23:43.733356200 +0200
-+++ transformers-5.15.0.new/src/transformers/models/auto/auto_mappings.py	2026-08-21 05:33:10.879925384 +0200
+diff -Nru transformers-5.19.0/src/transformers/models/auto/auto_mappings.py transformers-5.19.0/src/transformers/models/auto/auto_mappings.py
+--- transformers-5.19.0/src/transformers/models/auto/auto_mappings.py	2026-10-06 18:23:17.000000000 +0200
++++ transformers-5.19.0/src/transformers/models/auto/auto_mappings.py	2026-10-07 20:15:57.090276024 +0200
 @@ -35,6 +35,9 @@
          ("altclip_text_model", "AltCLIPTextConfig"),
          ("altclip_vision_model", "AltCLIPVisionConfig"),
@@ -3455,7 +3455,7 @@ diff -Nru transformers-5.15.0/src/transformers/models/auto/auto_mappings.py tran
          ("arcee", "ArceeConfig"),
          ("aria", "AriaConfig"),
          ("aria_text", "AriaTextConfig"),
-@@ -686,6 +689,7 @@
+@@ -720,6 +723,7 @@
          ("voxtral_realtime", "VoxtralRealtimeConfig"),
          ("voxtral_realtime_encoder", "VoxtralRealtimeEncoderConfig"),
          ("voxtral_realtime_text", "VoxtralRealtimeTextConfig"),
@@ -3463,7 +3463,7 @@ diff -Nru transformers-5.15.0/src/transformers/models/auto/auto_mappings.py tran
          ("wav2vec2", "Wav2Vec2Config"),
          ("wav2vec2-bert", "Wav2Vec2BertConfig"),
          ("wav2vec2-conformer", "Wav2Vec2ConformerConfig"),
-@@ -721,6 +725,8 @@
+@@ -755,6 +759,8 @@
          ("align_vision_model", "align"),
          ("altclip_text_model", "altclip"),
          ("altclip_vision_model", "altclip"),
@@ -3472,7 +3472,7 @@ diff -Nru transformers-5.15.0/src/transformers/models/auto/auto_mappings.py tran
          ("aria_text", "aria"),
          ("audio-spectrogram-transformer", "audio_spectrogram_transformer"),
          ("audioflamingo3_encoder", "audioflamingo3"),
-@@ -1015,6 +1021,7 @@
+@@ -1070,6 +1076,7 @@
          ("univnet", "UnivNetFeatureExtractor"),
          ("vibevoice_acoustic_tokenizer", "VibeVoiceAcousticTokenizerFeatureExtractor"),
          ("voxtral_realtime", "VoxtralRealtimeFeatureExtractor"),
@@ -3480,7 +3480,7 @@ diff -Nru transformers-5.15.0/src/transformers/models/auto/auto_mappings.py tran
          ("wav2vec2", "Wav2Vec2FeatureExtractor"),
          ("whisper", "WhisperFeatureExtractor"),
          ("xcodec2", "Xcodec2FeatureExtractor"),
-@@ -1025,6 +1032,7 @@
+@@ -1080,6 +1087,7 @@
      [
          ("align", "AlignProcessor"),
          ("altclip", "AltCLIPProcessor"),
@@ -3488,7 +3488,7 @@ diff -Nru transformers-5.15.0/src/transformers/models/auto/auto_mappings.py tran
          ("aria", "AriaProcessor"),
          ("audioflamingo3", "AudioFlamingo3Processor"),
          ("aya_vision", "AyaVisionProcessor"),
-@@ -1164,6 +1172,7 @@
+@@ -1231,6 +1239,7 @@
  
  IMAGE_PROCESSOR_MAPPING_NAMES = OrderedDict(
      [
@@ -3496,9 +3496,9 @@ diff -Nru transformers-5.15.0/src/transformers/models/auto/auto_mappings.py tran
          ("aria", {"pil": "AriaImageProcessorPil", "torchvision": "AriaImageProcessor"}),
          ("beit", {"pil": "BeitImageProcessorPil", "torchvision": "BeitImageProcessor"}),
          ("bit", {"pil": "BitImageProcessorPil", "torchvision": "BitImageProcessor"}),
-diff -Nru transformers-5.15.0/src/transformers/models/auto/modeling_auto.py transformers-5.15.0.new/src/transformers/models/auto/modeling_auto.py
---- transformers-5.15.0/src/transformers/models/auto/modeling_auto.py	2026-08-10 12:23:43.733356200 +0200
-+++ transformers-5.15.0.new/src/transformers/models/auto/modeling_auto.py	2026-08-21 05:33:10.880218838 +0200
+diff -Nru transformers-5.19.0/src/transformers/models/auto/modeling_auto.py transformers-5.19.0/src/transformers/models/auto/modeling_auto.py
+--- transformers-5.19.0/src/transformers/models/auto/modeling_auto.py	2026-10-06 18:23:17.000000000 +0200
++++ transformers-5.19.0/src/transformers/models/auto/modeling_auto.py	2026-10-07 20:21:20.939566925 +0200
 @@ -48,6 +48,8 @@
          ("align", "AlignModel"),
          ("altclip", "AltCLIPModel"),
@@ -3508,7 +3508,7 @@ diff -Nru transformers-5.15.0/src/transformers/models/auto/modeling_auto.py tran
          ("arcee", "ArceeModel"),
          ("aria", "AriaModel"),
          ("aria_text", "AriaTextModel"),
-@@ -553,6 +555,7 @@
+@@ -584,6 +586,7 @@
          ("wav2vec2-bert", "Wav2Vec2BertModel"),
          ("wav2vec2-conformer", "Wav2Vec2ConformerModel"),
          ("wavlm", "WavLMModel"),
@@ -3516,7 +3516,7 @@ diff -Nru transformers-5.15.0/src/transformers/models/auto/modeling_auto.py tran
          ("whisper", "WhisperModel"),
          ("xclip", "XCLIPModel"),
          ("xcodec", "XcodecModel"),
-@@ -680,6 +683,7 @@
+@@ -712,6 +715,7 @@
          # Model for Causal LM mapping
          ("afmoe", "AfmoeForCausalLM"),
          ("apertus", "ApertusForCausalLM"),
@@ -3524,7 +3524,7 @@ diff -Nru transformers-5.15.0/src/transformers/models/auto/modeling_auto.py tran
          ("arcee", "ArceeForCausalLM"),
          ("aria_text", "AriaTextForCausalLM"),
          ("axk1", "AXK1ForCausalLM"),
-@@ -1062,6 +1066,7 @@
+@@ -1099,6 +1103,7 @@
  
  MODEL_FOR_IMAGE_TEXT_TO_TEXT_MAPPING_NAMES = OrderedDict(
      [
@@ -3532,17 +3532,17 @@ diff -Nru transformers-5.15.0/src/transformers/models/auto/modeling_auto.py tran
          ("aria", "AriaForConditionalGeneration"),
          ("aya_vision", "AyaVisionForConditionalGeneration"),
          ("blip", "BlipForConditionalGeneration"),
-@@ -1995,6 +2000,7 @@
-         ("dac", "DacModel"),
+@@ -2055,6 +2060,7 @@
          ("higgs_audio_v2_tokenizer", "HiggsAudioV2TokenizerModel"),
+         ("neucodec", "NeuCodecModel"),
          ("vibevoice_acoustic_tokenizer", "VibeVoiceAcousticTokenizerModel"),
 +        ("wavtokenizer", "WavTokenizerModel"),
          ("xcodec2", "Xcodec2Model"),
      ]
  )
-diff -Nru transformers-5.15.0/src/transformers/models/wavtokenizer/__init__.py transformers-5.15.0.new/src/transformers/models/wavtokenizer/__init__.py
---- transformers-5.15.0/src/transformers/models/wavtokenizer/__init__.py	1970-01-01 01:00:00.000000000 +0100
-+++ transformers-5.15.0.new/src/transformers/models/wavtokenizer/__init__.py	2026-08-21 05:33:10.839765568 +0200
+diff -Nru transformers-5.19.0/src/transformers/models/wavtokenizer/__init__.py transformers-5.19.0/src/transformers/models/wavtokenizer/__init__.py
+--- transformers-5.19.0/src/transformers/models/wavtokenizer/__init__.py	1970-01-01 01:00:00.000000000 +0100
++++ transformers-5.19.0/src/transformers/models/wavtokenizer/__init__.py	2026-10-07 20:15:57.090630639 +0200
 @@ -0,0 +1,28 @@
 +# Copyright 2026 The SwissAI Initiative and The HuggingFace Inc. team. All rights reserved.
 +#
@@ -3572,9 +3572,9 @@ diff -Nru transformers-5.15.0/src/transformers/models/wavtokenizer/__init__.py t
 +
 +    _file = globals()["__file__"]
 +    sys.modules[__name__] = _LazyModule(__name__, _file, define_import_structure(_file), module_spec=__spec__)
-diff -Nru transformers-5.15.0/src/transformers/models/wavtokenizer/configuration_wavtokenizer.py transformers-5.15.0.new/src/transformers/models/wavtokenizer/configuration_wavtokenizer.py
---- transformers-5.15.0/src/transformers/models/wavtokenizer/configuration_wavtokenizer.py	1970-01-01 01:00:00.000000000 +0100
-+++ transformers-5.15.0.new/src/transformers/models/wavtokenizer/configuration_wavtokenizer.py	2026-08-21 05:33:10.839793468 +0200
+diff -Nru transformers-5.19.0/src/transformers/models/wavtokenizer/configuration_wavtokenizer.py transformers-5.19.0/src/transformers/models/wavtokenizer/configuration_wavtokenizer.py
+--- transformers-5.19.0/src/transformers/models/wavtokenizer/configuration_wavtokenizer.py	1970-01-01 01:00:00.000000000 +0100
++++ transformers-5.19.0/src/transformers/models/wavtokenizer/configuration_wavtokenizer.py	2026-10-07 20:15:57.090663729 +0200
 @@ -0,0 +1,152 @@
 +#                🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
 +#           This file was automatically generated from src/transformers/models/wavtokenizer/modular_wavtokenizer.py.
@@ -3728,9 +3728,9 @@ diff -Nru transformers-5.15.0/src/transformers/models/wavtokenizer/configuration
 +
 +
 +__all__ = ["WavTokenizerConfig"]
-diff -Nru transformers-5.15.0/src/transformers/models/wavtokenizer/feature_extraction_wavtokenizer.py transformers-5.15.0.new/src/transformers/models/wavtokenizer/feature_extraction_wavtokenizer.py
---- transformers-5.15.0/src/transformers/models/wavtokenizer/feature_extraction_wavtokenizer.py	1970-01-01 01:00:00.000000000 +0100
-+++ transformers-5.15.0.new/src/transformers/models/wavtokenizer/feature_extraction_wavtokenizer.py	2026-08-21 05:33:10.839876349 +0200
+diff -Nru transformers-5.19.0/src/transformers/models/wavtokenizer/feature_extraction_wavtokenizer.py transformers-5.19.0/src/transformers/models/wavtokenizer/feature_extraction_wavtokenizer.py
+--- transformers-5.19.0/src/transformers/models/wavtokenizer/feature_extraction_wavtokenizer.py	1970-01-01 01:00:00.000000000 +0100
++++ transformers-5.19.0/src/transformers/models/wavtokenizer/feature_extraction_wavtokenizer.py	2026-10-07 20:15:57.090733080 +0200
 @@ -0,0 +1,172 @@
 +# Copyright 2026 The SwissAI Initiative and The HuggingFace Inc. team. All rights reserved.
 +#
@@ -3904,9 +3904,9 @@ diff -Nru transformers-5.15.0/src/transformers/models/wavtokenizer/feature_extra
 +
 +
 +__all__ = ["WavTokenizerFeatureExtractor"]
-diff -Nru transformers-5.15.0/src/transformers/models/wavtokenizer/modeling_wavtokenizer.py transformers-5.15.0.new/src/transformers/models/wavtokenizer/modeling_wavtokenizer.py
---- transformers-5.15.0/src/transformers/models/wavtokenizer/modeling_wavtokenizer.py	1970-01-01 01:00:00.000000000 +0100
-+++ transformers-5.15.0.new/src/transformers/models/wavtokenizer/modeling_wavtokenizer.py	2026-08-21 05:33:10.839814318 +0200
+diff -Nru transformers-5.19.0/src/transformers/models/wavtokenizer/modeling_wavtokenizer.py transformers-5.19.0/src/transformers/models/wavtokenizer/modeling_wavtokenizer.py
+--- transformers-5.19.0/src/transformers/models/wavtokenizer/modeling_wavtokenizer.py	1970-01-01 01:00:00.000000000 +0100
++++ transformers-5.19.0/src/transformers/models/wavtokenizer/modeling_wavtokenizer.py	2026-10-07 20:15:57.090803731 +0200
 @@ -0,0 +1,669 @@
 +#                🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
 +#           This file was automatically generated from src/transformers/models/wavtokenizer/modular_wavtokenizer.py.
@@ -4577,9 +4577,9 @@ diff -Nru transformers-5.15.0/src/transformers/models/wavtokenizer/modeling_wavt
 +
 +
 +__all__ = ["WavTokenizerModel", "WavTokenizerPreTrainedModel"]
-diff -Nru transformers-5.15.0/src/transformers/models/wavtokenizer/modular_wavtokenizer.py transformers-5.15.0.new/src/transformers/models/wavtokenizer/modular_wavtokenizer.py
---- transformers-5.15.0/src/transformers/models/wavtokenizer/modular_wavtokenizer.py	1970-01-01 01:00:00.000000000 +0100
-+++ transformers-5.15.0.new/src/transformers/models/wavtokenizer/modular_wavtokenizer.py	2026-08-21 05:33:10.839845919 +0200
+diff -Nru transformers-5.19.0/src/transformers/models/wavtokenizer/modular_wavtokenizer.py transformers-5.19.0/src/transformers/models/wavtokenizer/modular_wavtokenizer.py
+--- transformers-5.19.0/src/transformers/models/wavtokenizer/modular_wavtokenizer.py	1970-01-01 01:00:00.000000000 +0100
++++ transformers-5.19.0/src/transformers/models/wavtokenizer/modular_wavtokenizer.py	2026-10-07 20:15:57.090961034 +0200
 @@ -0,0 +1,521 @@
 +# Copyright 2026 The SwissAI Initiative and The HuggingFace Inc. team. All rights reserved.
 +#

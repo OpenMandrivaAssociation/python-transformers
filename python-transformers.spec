@@ -1,17 +1,16 @@
 Name:		python-transformers
-Version:	5.15.0
-Release:	2
+Version:	5.19.0
+Release:	1
 Summary:	State-of-the-art Machine Learning for PyTorch
 License:	Apache-2.0
 Group:		Development/Python
 URL:		https://github.com/huggingface/transformers
 Source0:	https://files.pythonhosted.org/packages/source/t/transformers/transformers-%{version}.tar.gz
-# 5.15.0 pins tokenizers<=0.23.0; 0.23.0 was never released on PyPI
-Patch0:		transformers-5.15.0-tokenizers-0.23.1.patch
 # Apertus 1.5 (apertus1p5) is not in a released Transformers yet.
 # Backport of swiss-ai/transformers@3797303 (the pin on the model card),
 # including WavTokenizer which the 1.5 audio tower requires.
-Patch1:		transformers-5.15.0-apertus1p5.patch
+# Refreshed for 5.19: the audio tokenizer map now includes neucodec.
+Patch0:		transformers-5.19.0-apertus1p5.patch
 BuildArch:	noarch
 BuildSystem:	python
 BuildRequires:	python
