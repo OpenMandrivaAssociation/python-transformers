@@ -1,6 +1,6 @@
 Name:		python-transformers
 Version:	5.19.0
-Release:	1
+Release:	2
 Summary:	State-of-the-art Machine Learning for PyTorch
 License:	Apache-2.0
 Group:		Development/Python
